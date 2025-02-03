@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text should be visible.
+  </div>
+
+  <script>
+    //Incorrect way to select an element.  This will result in an error.
+    let divElement = document.getElementById('myDiv');
+    divElement.style.display = "none";
+    //Missing a semicolon, causes unexpected errors in some browsers.
+    let anotherElement = document.querySelector('#anotherDiv')
+    anotherElement.style.visibility = "hidden"; 
+  </script>
+</body>
+</html>
