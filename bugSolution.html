@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text should be visible.
+  </div>
+  <div id="anotherDiv">
+    This text should also be visible.
+  </div>
+
+  <script>
+    //Correct way to select an element.
+    let divElement = document.getElementById('myDiv');
+    divElement.style.display = "none";
+    //Semicolon added for correct syntax.
+    let anotherElement = document.querySelector('#anotherDiv');
+    anotherElement.style.visibility = "hidden";
+  </script>
+</body>
+</html>
