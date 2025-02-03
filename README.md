@@ -1,0 +1,1 @@
+This repository demonstrates an uncommon HTML bug involving incorrect element selection in JavaScript and a missing semicolon, leading to unexpected behavior and potential errors. The `bug.html` file contains the erroneous code, while `bugSolution.html` provides the corrected version.
